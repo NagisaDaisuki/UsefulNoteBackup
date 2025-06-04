@@ -1,0 +1,29 @@
+① 确保虚拟机已安装并启动 SSH 服务
+########################
+sudo yum install -y openssh-server
+sudo systemctl start sshd
+sudo systemctl enable sshd
+########################
+
+② 防火墙放行 SSH 端口（默认是 22）
+########################
+sudo firewall-cmd --permanent --add-port=22/tcp
+sudo firewall-cmd --reload
+########################
+验证端口是否开放：
+########################
+sudo firewall-cmd --list-ports
+########################
+
+③ 查看虚拟机的 IP 地址
+########################
+ip a
+########################
+
+然后在宿主机上连接：
+########################
+ssh username@linux计算机ip
+########################
+
+如果是首次连接，会提示是否接受主机密钥，输入 yes，然后输入linux计算机用户的密码即可。
+可以使用ssh-keygen生成公钥复制到远程计算机上`~/.ssh/id_rsa.pub` ---> `~/.ssh/authorized_keys`

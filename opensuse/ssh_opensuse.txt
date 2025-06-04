@@ -1,0 +1,22 @@
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\Nagisa/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\Nagisa/.ssh/id_rsa
+Your public key has been saved in C:\Users\Nagisa/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:2xhWu7a90LfkVVk5K77kQpEOCJH7ncX7fFbLbwZjQOM millsmitzi71@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|     .o          |
+|     o      o   .|
+|      o . oo.. o.|
+|     . . o *E   =|
+|      . S * oo o.|
+|       o B *. = o|
+|        o * +++o+|
+|         . =o*.Bo|
+|          . ++=oo|
++----[SHA256]-----+
+PS C:\Users\Nagisa> cat C:\Users\Nagisa/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCnd7QqzlsNm8PoiOPE7ruVaeQMgrNE20YXowXyg7NjKvHCUkIBaID2oGFeFCBI/+wQhjewDubNvZNuljG7prHuWZfwJTry+OqGqzyBIQ0u1Xq5Ih4FqULxBN9DkO7a0KEa5fOqwyZfArob1nvoQ4Y38h3oYPJN8Gvw13KSGJcLQEpHwma1yNZgiYhl/JyYF2zcDDCfy/dUiiotsGM83WE5LmXgpTOAgOCkvmFbOzx89STtWN53VuWv9v2Bpn6NZftFHecewC3VxYLP7WiDPJBU3hbymg4VUYskhw0rGK9cVJrjD3hsq4YRZYtCv+ocs+KfK7IAl6fb/+dZfK//fm7s7pZuYgeR+Om5KngGAKJGgyvaagfE8SHmgiAPFm7CBbjjwl2/TG0fbYliA+RbB6sAojA/JooUOwLmCYOGfK7RMKCYv9fPUQZQRhAJcIiyKf43R5CEbnKfx0EILn4DUEY86Qgm8CZJQwdde+5eap8hJ+ZMLJ34Np73P3lC5/sX3bJPASDMgDmPVa447iXsyBqR79icMz3V9iOcC8lR2nANv/TFb/vpBM+8XCCT5G8WSTCEcOXKvZ++7+O8qlRD9///68wbD+H9s4HrbRUsMZ5zk3FIISm3dtyybBJ5+NUOrKmZDzelZRVS0Nggb9xj76Lm9zAdgaVUCc//A/1Z+VZ3VQ== millsmitzi71@gmail.com

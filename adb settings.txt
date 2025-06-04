@@ -1,0 +1,4 @@
+永久修改ntp服务器(root):
+adb shell 
+su
+setprop persist.ntp.server cn.pool.ntp.org

@@ -1,0 +1,36 @@
+一：备份原有YUM源配置
+########################
+sudo mkdir -p /etc/yum.repos.d/backup
+sudo mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/backup
+########################
+
+二：下载阿里云CentOS7镜像源配置
+########################
+sudo curl -o /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo
+########################
+
+三：清理旧缓存并生成新缓存
+########################
+sudo yum clean all
+sudo yum makecache
+########################
+
+验证是否切换成功
+########################
+yum repolist
+########################
+
+其他常用国内镜像源（可选）
+1. 清华大学镜像源
+sudo curl -o /etc/yum.repos.d/CentOS-Base.repo https://mirrors.tuna.tsinghua.edu.cn/help/centos/?date=7
+2. 网易镜像源
+sudo curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.help/CentOS7-Base-163.repo
+3. 中科大镜像源
+sudo curl -o /etc/yum.repos.d/CentOS-Base.repo https://mirrors.ustc.edu.cn/repoconfig/centos-7.repo
+
+补充：启用 epel 镜像（很多软件依赖它）
+########################
+sudo yum install -y epel-release
+sudo sed -i 's!^#baseurl=!baseurl=!g; s!^mirrorlist=!#mirrorlist=!g; s!//download.fedoraproject.org/pub!//mirrors.aliyun.com!g' /etc/yum.repos.d/epel.repo
+sudo yum makecache
+########################

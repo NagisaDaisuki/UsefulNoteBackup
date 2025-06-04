@@ -1,0 +1,4 @@
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs //开始菜单快捷方式
+C:\Users\Nagisa\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup //开机启动项目录
+$env:LOCALAPPDATA\ app存储配置文件夹
+%LOCALAPPDATA%

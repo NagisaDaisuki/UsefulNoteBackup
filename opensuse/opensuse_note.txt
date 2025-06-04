@@ -1,0 +1,2 @@
+ssh Himari@106.15.58.39 	wsxl20050307
+root 	@wsxl20050307V
