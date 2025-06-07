@@ -1,0 +1,8 @@
+hugo hugo new .\content\posts\file.md
+修改file.md
+hugo server
+-----
+先查看变化和是否需要更改.gitignore
+git add -A
+git commit -m "something new"
+git push -u origin main
