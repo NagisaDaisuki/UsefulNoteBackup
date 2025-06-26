@@ -1,0 +1,7 @@
+使用官方脚本自动更新镜像列表
+####
+sudo pacman -S reflector
+sudo reflector --country China --age 6 --sort rate --protocol https --save /etc/pacman.d/mirrorlist
+####
+然后更新数据
+sudo pacman -Syy

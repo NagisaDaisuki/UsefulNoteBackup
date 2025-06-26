@@ -1,0 +1,28 @@
+查看当前rofi使用的什么图标主题
+nvim ~/.config/rofi/config.rasi
+configuration {
+	/*---------- General setting ----------*/
+	modi: "drun,run,filebrowser,window";
+	case-sensitive: false;
+	cycle: true;
+	filter: "";
+	scroll-method: 0;
+	normalize-match: true;
+	show-icons: true;
+	icon-theme: "Papirus";
+主题为Papirus
+
+bind = Super, R, exec, rofi -show drun -modi drun -show-icons
+
+.desktop Icon字段
+
+~/.config/gtk-3.0/4.0/settings.ini
+[Settings]
+gtk-icon-theme-name=Adwaita / breeze
+
+sudo gtk-update-icon-cache -f -t /usr/share/icons/Adwaita # 根据你选择的主题
+sudo gtk-update-icon-cache -f -t /usr/share/icons/Papirus # 别忘了 Papirus
+
+sudo pacman -S papirus-icon-theme
+
+sudo pacman -S hicolor-icon-theme
